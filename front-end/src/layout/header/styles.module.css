@@ -1,0 +1,19 @@
+.header__content{
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo img{
+    width: 150px;        
+    object-fit: cover;
+    object-position: center;    
+    display: block;
+}
+.header__content li a{
+    color: blue;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+}
