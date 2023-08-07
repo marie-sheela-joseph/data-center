@@ -1,0 +1,22 @@
+.banner{
+    height: 80vh;
+    background-image: url('../../../../assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner>div{
+    height: 100%;
+}
+.banner__content{
+    height: 100%;
+ color: #fff;   
+ max-width: 30%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.banner__content h3{
+font-size: 1.4rem;
+}
