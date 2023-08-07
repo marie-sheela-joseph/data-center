@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
-import logo from './assets/images/logo.png'
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+
 function App() {
   useEffect(()=>{
     fetch('https://data-center-sheela.onrender.com/racks')
@@ -9,13 +10,17 @@ function App() {
     .catch((error)=>console.log(error))
   },[])
   return (
-    <div className="App">
-      <div>
-        <img src={logo} alt='data center'/>
-      </div>
-      <h1>data center</h1>     
-
-    </div>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<h1>home</h1>}/>
+            <Route path='rack/:id' element={<h1>rack id</h1>}/>
+            <Route path='about' element={<h1>about</h1>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+  </main>    
   );
 }
 
