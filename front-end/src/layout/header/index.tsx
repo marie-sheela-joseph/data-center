@@ -13,8 +13,7 @@ const Header=()=>{
                     </div>
                     <div className={styles.header__list}>
                         <ul>
-                            <li><Link to='/about'>about</Link></li>                            
-                            <li><Link to={'/blogs'}>blog</Link></li>
+                            <li><Link to='/about'>about</Link></li>                                                        
                         </ul>
                     </div>
                     </div>
