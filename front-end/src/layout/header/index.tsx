@@ -14,6 +14,7 @@ const Header=()=>{
                     <div className={styles.header__list}>
                         <ul>
                             <li><Link to='/about'>about</Link></li>                            
+                            <li><Link to={'/blogs'}>blog</Link></li>
                         </ul>
                     </div>
                     </div>

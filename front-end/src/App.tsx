@@ -6,6 +6,7 @@ import { useAppDispatch } from "store/hooks"
 import Home from 'pages/home';
 import About from 'pages/about';
 import RackItem from 'pages/rackItem';
+import Blogs from 'pages/blogs';
 
 function App() {
   const dispatch=useAppDispatch()
@@ -20,6 +21,7 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path='rack/:id' element={<RackItem/>}/>
             <Route path='about' element={<About/>}/>
+            <Route path='blogs' element={<Blogs/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
