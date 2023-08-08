@@ -1,0 +1,11 @@
+.main h2{
+text-transform: capitalize;
+}
+.main__image{
+    text-align: center;
+}
+.main img{
+    width: 500px;
+    height: 300px;    
+    margin-bottom: 2rem;
+}
