@@ -5,12 +5,12 @@ import { baseUrl } from 'api';
 const url = baseUrl + 'racks';
 export type rackItemType = {
   _id: string;
-  availableVerticalUnits: Number;
+  availableVerticalUnits: number;
   devices: {
-    deviceType: String;
-    modelName: String;
-    numberOfPorts: Number;
-    verticalSize: Number;
+    deviceType: string;
+    modelName: string;
+    numberOfPorts: number;
+    verticalSize: number;
   }[];
 };
 
