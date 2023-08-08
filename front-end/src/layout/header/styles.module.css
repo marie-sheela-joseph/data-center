@@ -8,12 +8,19 @@
     object-position: center;    
     display: block;
 }
-.header__content li a{
-    color: blue;
-    font-size: 1.4rem;
-    text-transform: capitalize;
-}
-.header__list{
+.header__list ul{
+    height: 100%;
     display: flex;
     align-items: center;
+}
+.header__list a{
+    display: inline-block;
+    padding: 0 8px;
+    color: #000;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.header__list a:hover{
+    color: #fb4d3d;
 }
