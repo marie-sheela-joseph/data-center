@@ -21,11 +21,11 @@ const currentRack=useAppSelector((state)=>state.racks.rackItems.find((rack)=>rac
                 </thead>
                 <tbody>
                     {currentRack?.devices.map((device,i)=><tr key={device._id}>                        
-                        <th>{device._id}</th>
-                        <th>{device.deviceType}</th>
-                        <th>{device.modelName}</th>
-                        <th>{device.numberOfPorts}</th>
-                        <th>{device.verticalSize}</th>
+                        <td>{device._id}</td>
+                        <td>{device.deviceType}</td>
+                        <td>{device.modelName}</td>
+                        <td>{device.numberOfPorts}</td>
+                        <td>{device.verticalSize}</td>
                     </tr>)}
                 </tbody>
             </table>            
