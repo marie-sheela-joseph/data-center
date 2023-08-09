@@ -8,7 +8,7 @@ const currentRack=useAppSelector((state)=>state.racks.rackItems.find((rack)=>rac
             <div className="container">
             <h2>rack details</h2>            
             <p>Rack Id: {currentRackId}</p>
-            <p>Total Number of Devies: {currentRack?.devices.length}</p>
+            <p>Total Number of Devices: {currentRack?.devices.length}</p>
             <table>
                 <thead>
                     <tr>                    
