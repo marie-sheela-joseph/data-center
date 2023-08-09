@@ -34,3 +34,6 @@ th:nth-child(5),td:nth-child(5){
 th:nth-child(6),td:nth-child(6){
     width: 10%;
 }
+.racks__spinner{
+    text-align: center;
+}
