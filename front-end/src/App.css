@@ -118,7 +118,7 @@ table{
 thead{
   background-color: rgb(19, 66, 114);
   color: #fff;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 th,td{
   border: 1px solid black;
@@ -128,7 +128,7 @@ th,td{
   display: flex;
 }
 @media only screen and (max-width: 600px){
-  th:nth-child(1),th:nth-child(3),th:nth-child(4),th:nth-child(5),td:nth-child(1),td:nth-child(3),td:nth-child(4),td:nth-child(5){
+  th:nth-child(2),th:nth-child(3),th:nth-child(4),td:nth-child(2),td:nth-child(3),td:nth-child(4){
     display: none;
   }
   

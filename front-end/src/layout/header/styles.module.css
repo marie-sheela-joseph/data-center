@@ -1,3 +1,6 @@
+.header{
+    background-color: #F5F5F5;
+}
 .header__content{
     display: flex;
     justify-content: space-between;
