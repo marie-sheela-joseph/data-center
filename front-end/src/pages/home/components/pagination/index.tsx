@@ -1,32 +1,37 @@
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
+import { useAppDispatch } from 'store/hooks';
+import {device, setCurrentRack} from 'store/slices/racksSlice';
 
 function Items({ currentItems }:{currentItems:any[]}) {
+  const dispatch=useAppDispatch();
   return (
     <table>
                 <thead>
-                    <tr>
-                        <th>S.No</th>
-                        <th>id</th>
-                        <th>total vertical units</th>
-                        <th>used vertical units</th>
+                    <tr>                        
+                        <th>rack id</th>
+                        <th>total vertical units (U)</th>
+                        <th>used vertical units (U)</th>
                         <th>number of devices</th>
                         <th>details</th>
                     </tr>
                 </thead>
                 <tbody>
       {currentItems &&
-        currentItems.map((rack,i) => (
-            <tr>
-            <td>{i+1}</td>
+        currentItems.map((rack,i) => {
+          let usedVerticalUnits=0;
+          rack.devices.forEach((device:device)=>{usedVerticalUnits+=device.verticalSize})
+          
+          return(
+            <tr key={rack._id}>            
             <td>{rack._id}</td>
-            <td>5</td>
-            <td>{5-rack.availableVerticalUnits}</td>
+            <td>42</td>
+            <td>{usedVerticalUnits}</td>
             <td>{rack.devices.length}</td>
-            <td><Link to={`/rack/${rack._id}`}>view details</Link></td>
+            <td><Link to={`/rack/${rack._id}`} onClick={()=>dispatch(setCurrentRack(rack._id))}>view details</Link></td>
         </tr>
-        ))
+        )})
       }
     </tbody>
     </table>
@@ -37,10 +42,9 @@ function PaginatedItems({ itemsPerPage,items }:{itemsPerPage:number,items:any[]}
   const [currentItems, setCurrentItems] = useState<number[]>([]);
   const [pageCount, setPageCount] = useState(0);  
   const [itemOffset, setItemOffset] = useState(0);
-
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;    
-    setCurrentItems(items.slice(itemOffset, endOffset));
+     setCurrentItems(items?.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(items.length / itemsPerPage));
   }, [itemOffset, itemsPerPage,items]);
   

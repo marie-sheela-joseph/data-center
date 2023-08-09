@@ -7,8 +7,8 @@ const Banner=()=>{
         <div className='container'>
         <div className={styles.banner__content}>
             <div>
-            <h1>Data center</h1>
-            <h3>The Pulse of Digital Transformation by redefining Data Possibilities.</h3>
+            <h1>data center</h1>
+            <h3>the pulse of digital transformation by redefining data possibilities.</h3>
             <Link to={'/'}>get started now</Link>
             </div>
         </div>
