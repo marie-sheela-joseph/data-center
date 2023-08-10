@@ -114,14 +114,15 @@ ul{
 table{
   margin: auto;
   margin-bottom: 2rem;
+  border:  1px solid #BEE3F8;
 }
 thead{
-  background-color: rgb(19, 66, 114);
-  color: #fff;
   text-transform: uppercase;
 }
+th{
+  font-size: 1.6rem !important;
+}
 th,td{
-  border: 1px solid black;
   padding: 4px;
 }
 td{
@@ -130,9 +131,6 @@ td{
 .pagination{
   display: flex;
 }
-@media only screen and (max-width: 600px){
-  th:nth-child(2),th:nth-child(3),th:nth-child(4),td:nth-child(2),td:nth-child(3),td:nth-child(4){
-    display: none;
-  }
-  
+img{
+  display: inline-block;
 }
