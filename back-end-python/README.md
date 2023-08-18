@@ -42,7 +42,7 @@ This project is a Python REST API built using the Flask framework. It provides e
 ## Setup
 
 1. Clone the repository:  
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/marie-sheela-joseph/data-center.git
    cd your-repo
 
 2. Install dependencies:  
