@@ -1,7 +1,7 @@
 {
-  "name": "food-backend",
+  "name": "data-center-backend",
   "version": "1.0.0",
-  "description": "food-backend",
+  "description": "data-center-backend",
   "main": "index.js",
   "type": "module",
   "scripts": {
