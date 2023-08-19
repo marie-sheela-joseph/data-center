@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gdtv^-^m311zb#8pht$58f3fc$$7dzhd&h-__=)m3mks_$c1dm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,17 +77,6 @@ WSGI_APPLICATION = 'backenddjango.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'datacenter',
-        'USER':'postgres',
-        'PASSWORD':'sheela',
-        'HOST':'localhost',
-        'PORT':'5432'
-    }
-}
 
 DATABASES = {
     'default': dj_database_url.config(
