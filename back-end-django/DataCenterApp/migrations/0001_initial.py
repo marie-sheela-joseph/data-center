@@ -5,29 +5,33 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Racks',
+            name="Racks",
             fields=[
-                ('rackId', models.AutoField(primary_key=True, serialize=False)),
-                ('availableVerticalUnits', models.IntegerField()),
+                ("rackId", models.AutoField(primary_key=True, serialize=False)),
+                ("availableVerticalUnits", models.IntegerField()),
             ],
         ),
         migrations.CreateModel(
-            name='Devices',
+            name="Devices",
             fields=[
-                ('deviceId', models.AutoField(primary_key=True, serialize=False)),
-                ('deviceType', models.CharField(max_length=255)),
-                ('modelName', models.CharField(max_length=255)),
-                ('numberOfPorts', models.PositiveIntegerField()),
-                ('verticalSize', models.PositiveIntegerField()),
-                ('rack', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='DataCenterApp.racks')),
+                ("deviceId", models.AutoField(primary_key=True, serialize=False)),
+                ("deviceType", models.CharField(max_length=255)),
+                ("modelName", models.CharField(max_length=255)),
+                ("numberOfPorts", models.PositiveIntegerField()),
+                ("verticalSize", models.PositiveIntegerField()),
+                (
+                    "rack",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="DataCenterApp.racks",
+                    ),
+                ),
             ],
         ),
     ]
