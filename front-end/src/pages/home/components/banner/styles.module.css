@@ -1,40 +1,40 @@
-.banner{
-    height: 80vh;
-    background-image: url('../../../../assets/images/banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.banner {
+  height: 80vh;
+  background-image: url('../../../../assets/images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-.banner>div{
-    height: 100%;
+.banner > div {
+  height: 100%;
 }
-.banner__content{
-    height: 100%;
- color: #fff;   
- max-width: 30%;
- display: flex;
- justify-content: center;
- align-items: center;
+.banner__content {
+  height: 100%;
+  color: #fff;
+  max-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner__content h1{
-    text-transform: capitalize;
+.banner__content h1 {
+  text-transform: capitalize;
 }
-.banner__content h3{
-    text-transform: capitalize;
-font-size: 1.7rem;
-letter-spacing: 2px;
+.banner__content h3 {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
-.banner__content a{
-    display: inline-block;
-    background-color: #fb4d3d;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 500px;
-    padding: 10px 32px;
-    margin-top: 5rem;
+.banner__content a {
+  display: inline-block;
+  background-color: #fb4d3d;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 500px;
+  padding: 10px 32px;
+  margin-top: 5rem;
 }
-.banner__content a:hover{
-    background-color: #fc8277;
+.banner__content a:hover {
+  background-color: #fc8277;
 }

@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
 import { useAppDispatch } from 'store/hooks';
-import {device, setCurrentRack} from 'store/slices/racksSlice';
+import { device, setCurrentRack } from 'store/slices/racksSlice';
 import {
   Table,
   Thead,
-  Tbody,  
+  Tbody,
   Tr,
   Th,
   Td,
@@ -19,7 +19,7 @@ function Items({ currentItems }: { currentItems: any[] }) {
 
   return (
     <TableContainer>
-      <Table variant='striped' colorScheme='blue'>
+      <Table variant="striped" colorScheme="blue">
         <TableCaption>List of racks in Datacentral Paris</TableCaption>
         <Thead>
           <Tr>
@@ -61,7 +61,13 @@ function Items({ currentItems }: { currentItems: any[] }) {
   );
 }
 
-function PaginatedItems({ itemsPerPage, items }: { itemsPerPage: number, items: any[] }) {
+function PaginatedItems({
+  itemsPerPage,
+  items,
+}: {
+  itemsPerPage: number;
+  items: any[];
+}) {
   const [currentItems, setCurrentItems] = useState<number[]>([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);

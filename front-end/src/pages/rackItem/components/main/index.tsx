@@ -11,9 +11,9 @@ import {
 } from '@chakra-ui/react';
 
 const Main = () => {
-  const currentRackId = useAppSelector(state => state.racks.currentRackId);
-  const currentRack = useAppSelector(state =>
-    state.racks.rackItems.find(rack => rack._id === currentRackId)
+  const currentRackId = useAppSelector((state) => state.racks.currentRackId);
+  const currentRack = useAppSelector((state) =>
+    state.racks.rackItems.find((rack) => rack._id === currentRackId)
   );
 
   return (
@@ -23,7 +23,7 @@ const Main = () => {
         <p>Rack Id: {currentRackId}</p>
         <p>Total Number of Devices: {currentRack?.devices.length}</p>
         <TableContainer>
-          <Table variant='striped' colorScheme='blue'>
+          <Table variant="striped" colorScheme="blue">
             <TableCaption>List of Devices in Rack {currentRackId}</TableCaption>
             <Thead>
               <Tr>

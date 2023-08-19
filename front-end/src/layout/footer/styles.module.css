@@ -1,66 +1,66 @@
-.footer{
-    background-color: rgb(19, 66, 114);
-    color: #fff;
-    padding: 5rem 0;
-    text-transform: capitalize;
+.footer {
+  background-color: rgb(19, 66, 114);
+  color: #fff;
+  padding: 5rem 0;
+  text-transform: capitalize;
 }
-.footer a{    
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-weight: 300;
+.footer a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 300;
 }
-.footer__content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 /* .footer__content>div:nth-child(1){
 width: 70%;
 } */
-.footer__content>div:nth-child(1) a{
-    color: #fff;
+.footer__content > div:nth-child(1) a {
+  color: #fff;
 }
 /* .footer__content>div:nth-child(2){
     width: 20%;
 } */
-.footer__content h2{
-    border-bottom-color: rgba(255,255,255,.08);
-    border-bottom-width:1px;
-    border-bottom-style: solid;
-    text-align: left;
-    color: rgba(255,255,255,.5);
-    text-transform: capitalize;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.footer__content h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
-.footer__socialIcons a i{
-    color: #fff;
-    font-size: 18px;        
-    margin-right: 25px;
+.footer__socialIcons a i {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 25px;
 }
-.footer__subscribe{        
-    background-color: #fff;
-    color: #134272;
-    text-transform: uppercase;
-    font-size: 11px;
-    padding: 0 20px;    
-    line-height: 30px;    
-    border-radius: 500px;
-    font-weight: 800;
-    margin: 20px 0;
+.footer__subscribe {
+  background-color: #fff;
+  color: #134272;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 0 20px;
+  line-height: 30px;
+  border-radius: 500px;
+  font-weight: 800;
+  margin: 20px 0;
 }
-.footer__subscribe:hover{    
-background-color: #d6d6d6;
+.footer__subscribe:hover {
+  background-color: #d6d6d6;
 }
-.footer__content h3{
-    margin-bottom: 1rem;
+.footer__content h3 {
+  margin-bottom: 1rem;
 }
-.footer__content__row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.footer__content__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.footer__content__row>div{
-    padding: 0 3px;
+.footer__content__row > div {
+  padding: 0 3px;
 }
